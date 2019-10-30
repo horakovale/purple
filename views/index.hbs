@@ -1,24 +1,23 @@
 <h1> {{title}}</h1>
 
-
+ <form>
 <table>
     <tr>
-        <td>amount <input> </input> </td>
-        <td id="amount"></td>
+        <td>Amount <input name= "amount"> </input> </td>
     </tr>
     <tr>
         <td> EUR </td>
         <td id="currency"></td>
     </tr>
     <tr>
-        <td>destination currency <select> {{{currencyList}}} </select> </td>
-        <td id="destination"></td>
+        <td>Destination currency <select name= "code" > {{{currencyList}}} </select> </td>
     </tr>
     <tr>
-        <td> <button>Convert</button></td>
+         <input type="submit" value="Convert" class="button"/>
     </tr>
     <tr>
         <td>converted amount </td>
         <td id="converted"></td>
     </tr>
 </table>
+ </form>

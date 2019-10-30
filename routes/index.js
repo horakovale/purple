@@ -6,6 +6,9 @@ const fetch = require("node-fetch");
 /* GET home page. */
 router.get('/', function (req, res, next) {
 
+  console.log(req.query.amount);
+  console.log(req.query.code);
+
   const apiKey = '10ea24fb9c7a53b0e0e767eb408d2cc8';
   const apiUrl = 'http://data.fixer.io/api/';
 
@@ -22,8 +25,6 @@ router.get('/', function (req, res, next) {
 
   function displayCurrencyCodes(data) {
     let html = '';
-
-    console.log(data);
 
     for (var key in data.rates) {
       html = html + `
