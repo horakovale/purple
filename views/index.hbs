@@ -3,20 +3,19 @@
  <form>
 <table>
     <tr>
-        <td>Amount <input name= "amount"> </input> </td>
+        <td>Amount <input name= "amount" value="{{amount}}"></input> </td>
+    </tr>
+     <tr>
+        <td>Source currency <select name= "sourceCode" > {{{sourceCurrencyList}}} </select> </td>
     </tr>
     <tr>
-        <td> EUR </td>
-        <td id="currency"></td>
-    </tr>
-    <tr>
-        <td>Destination currency <select name= "code" > {{{currencyList}}} </select> </td>
+        <td>Destination currency <select name= "destinationCode" > {{{destinationCurrencyList}}} </select> </td>
     </tr>
     <tr>
          <input type="submit" value="Convert" class="button"/>
     </tr>
     <tr>
-        <td>converted amount </td>
+        <td>Converted amount {{result}} </td>
         <td id="converted"></td>
     </tr>
 </table>
