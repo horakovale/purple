@@ -1,8 +1,35 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/money.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 95vw;
+  min-height: 120vh;
+  }  
+
+h1 {
+    font-weight: 200;
+    font-size: 3em;
+    text-align: center;
 }
 
-a {
-  color: #00B7FF;
+table {
+  border-collapse: collapse;
+  margin: 5%; 
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+.button {
+  border-radius: 7px;
+  padding: 0.2em;
+}
+
+input.button:hover {
+  background: silver;
 }

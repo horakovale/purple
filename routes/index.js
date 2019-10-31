@@ -22,7 +22,7 @@ router.get('/', function (req, res, next) {
   function displayData(data, amount, sourceCode, destinationCode) {
 
     let result = "";
-    if (sourceCode && amount && destinationCode ) {
+    if (sourceCode && amount && destinationCode) {
       result = ((amount / data.rates[sourceCode]) * data.rates[destinationCode]).toString();
     }
 
@@ -34,11 +34,10 @@ router.get('/', function (req, res, next) {
       result: result
     });
   }
-
 });
 
 function currencyList(code, data) {
-  let html= "";
+  let html = "";
   for (var key in data.rates) {
 
     if (key === code) {
